@@ -1,5 +1,13 @@
 <resources>
     <string name="app_name">AzemaAttendance</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
+    <string name="check_in">Check in</string>
+    <string name="check_out">Check Out</string>
+    <string name="daily_report">Daily Report</string>
+    <string name="in_keyword">in</string>
+    <string name="out_keyword">out</string>
+    <string name="check_in_or_out">Check %s</string>
+    <string name="you_haven_t_not_checked_in_yet">You haven\'t not checked %s yet</string>
+    <string name="permsissons_requreid">Camera and Location Permissions Required</string>
+    <string name="you_cant_use_app">You can\'t use the app without allowing the required permissions</string>
+
 </resources>
