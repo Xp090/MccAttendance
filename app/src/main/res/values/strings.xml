@@ -1,13 +1,50 @@
 <resources>
-    <string name="app_name">AzemaAttendance</string>
+    <string name="app_name">MCC Attendance</string>
     <string name="check_in">Check in</string>
     <string name="check_out">Check Out</string>
-    <string name="daily_report">Daily Report</string>
+    <string name="daily_report">DailyReport</string>
     <string name="in_keyword">in</string>
     <string name="out_keyword">out</string>
     <string name="check_in_or_out">Check %s</string>
-    <string name="you_haven_t_not_checked_in_yet">You haven\'t not checked %s yet</string>
+    <string name="you_haven_t_not_checked_in_yet">You haven\'t not checked %s yet!</string>
+    <string name="checking">Checking %s</string>
+    <string name="you_must_check_in_before_checkout">You must check in before you checkout!</string>
+    <string name="confirm_chekcing_in_with_image">Confirm Checking %s with this picture?</string>
+    <string name="you_checked_successfully">You have checked %s successfully</string>
     <string name="permsissons_requreid">Camera and Location Permissions Required</string>
     <string name="you_cant_use_app">You can\'t use the app without allowing the required permissions</string>
+    <string name="title_activity_login">Login</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_sign_in_short">Login</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="cancel">Cancel</string>
+    <string name="an_error_occured">An error Occurred</string>
+
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="menu_logout">Logout</string>
+    <string name="error_with_retry">%s\nTry again?</string>
+    <!--error messages-->
+    <string name="INVALID_INPUT">Unable to send your attendance data, Please restart the app and try again</string>
+    <string name="CAN_NOT_CHECK_OUT_BEFORE_CHECK_IN">Make sure you checked in before checking out</string>
+    <string name="ALREADY_CHECKED_IN">You are already checked in</string>
+    <string name="ALREADY_CHECKED_OUT">You are already checked out</string>
+    <string name="CAN_NOT_UPLOAD_IMAGE">Can\'t upload attendance image at this time, Please check your connection</string>
+    <string name="YOU_HAVE_NOT_ASSIGNED_TO_PROJECT">You are not assigned to any project, Please contact your administrator</string>
+    <string name="YOU_ARE_AWAY_FROM_PROJECT_AREA">You can\'t check in/out, Because You are away from your project area</string>
+    <string name="SERVER_ISSUE">Unable to continue due to a server issue, Please try again later</string>
+    <string name="USER_NOT_FOUND">Your user does not exist or has been removed, Please contact your administrator</string>
+    <string name="NETWORK_ERROR">Network error occurred, Please check your connection</string>
+    <string name="INVALID_USERNAME_OR_PASSWORD">Invalid username or password</string>
+    <string name="unable_to_get_location">Unable to get your current location\nPlease make sure you have enabled The location service and permission for the app</string>
+    <string name="unable_to_save_image">Unable to get the captured image, Please make sure you have enough free space in your storage</string>
+    <!--+++++++++++++++++++++++++++++++++++-->
 
 </resources>

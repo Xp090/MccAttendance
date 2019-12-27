@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "160630262035",
+    "firebase_url": "https://azeemaattendance.firebaseio.com",
+    "project_id": "azeemaattendance",
+    "storage_bucket": "azeemaattendance.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160630262035:android:ae9acd98503017cc",
+        "android_client_info": {
+          "package_name": "com.xp090.azemaattendance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "160630262035-614fokq9n0psu88be73tsq1adctl4ijf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.xp090.azemaattendance",
+            "certificate_hash": "779325eb4051c3d14d9833e3b851047e5fc07b31"
+          }
+        },
+        {
+          "client_id": "160630262035-kuqb7ei5f3ngjjqk9vvmrn5tfn3nug3l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR-F7qIJh0T04UOJGsuQP35ycDL3Ktdps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "160630262035-kuqb7ei5f3ngjjqk9vvmrn5tfn3nug3l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
