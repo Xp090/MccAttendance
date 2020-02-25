@@ -1,16 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.main.dailyreport.DailyReportFragment">
 
-    <TextView
+    <androidx.cardview.widget.CardView
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toBottomOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <EditText
+            android:id="@+id/dailyReportText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:textColor="#000"
+            android:inputType="textMultiLine"
+            tools:text="TEST \nasdas"
+            android:gravity="top"
+            android:padding="8dp"
+            android:hint="@string/your_daily_report"
+            android:enabled="false"
+            android:scrollbars="vertical"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:text="No Daily Report Available" />
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.75" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="@+id/container"
+        app:layout_constraintStart_toStartOf="@+id/container"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+    <ProgressBar
+        android:id="@+id/drLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/container"
+        app:layout_constraintStart_toStartOf="@+id/container"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

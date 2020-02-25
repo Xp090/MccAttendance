@@ -45,6 +45,9 @@
     <string name="INVALID_USERNAME_OR_PASSWORD">Invalid username or password</string>
     <string name="unable_to_get_location">Unable to get your current location\nPlease make sure you have enabled The location service and permission for the app</string>
     <string name="unable_to_save_image">Unable to get the captured image, Please make sure you have enough free space in your storage</string>
+    <string name="dr_sent_message">Daily Report has been sent</string>
+    <string name="unable_dr_message">Unable to send Daily report</string>
+    <string name="your_daily_report">Your Daily Report</string>
     <!--+++++++++++++++++++++++++++++++++++-->
 
 </resources>

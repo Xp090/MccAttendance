@@ -3,6 +3,7 @@ package com.xp090.azemaattendance.data.repository
 import androidx.lifecycle.MutableLiveData
 import com.xp090.azemaattendance.data.model.Attendance
 import com.xp090.azemaattendance.data.model.CheckActionData
+import com.xp090.azemaattendance.data.model.DailyReportRequest
 import com.xp090.azemaattendance.data.source.AttendanceApi
 import id.zelory.compressor.Compressor
 import io.reactivex.Single
@@ -33,5 +34,11 @@ class AttendanceRepository(private val attendanceApi: AttendanceApi,
             }
             .doOnSuccess { attendanceData.postValue(it) }
 
+    }
+
+    fun submitDailyReport(dailyReport: String):Single<Any> {
+        val dailyReportRequest = DailyReportRequest(dailyReport)
+
+        return attendanceApi.submitDailyReport(userDataRepository.userData.value!!.id,dailyReportRequest)
     }
 }

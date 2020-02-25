@@ -21,8 +21,8 @@ data class User(
     val id: String,
     @Json(name = "fullName")
     val fullName: String?,
-    @Json(name = "projectId")
-    val projectId: String?,
+//    @Json(name = "projectId")
+//    val projectId: String?,
     @Json(name = "project")
     val project: Project?,
     @Json(name = "image")
@@ -34,9 +34,9 @@ data class Project(
     @Json(name = "id")
     val id: String,
     @Json(name = "name")
-    val name: String,
-    @Json(name = "branches")
-    val branches: List<Branch>?
+    val name: String
+//    @Json(name = "branches")
+//    val branches: List<Branch>?
 )
 
 @JsonClass(generateAdapter = true)

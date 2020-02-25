@@ -1,6 +1,7 @@
 package com.xp090.azemaattendance.data.source
 
 import com.xp090.azemaattendance.data.model.Attendance
+import com.xp090.azemaattendance.data.model.DailyReportRequest
 import com.xp090.azemaattendance.data.model.UserDailyAttendanceData
 import io.reactivex.Observable
 import io.reactivex.Single
@@ -20,4 +21,7 @@ interface AttendanceApi{
 
     @GET("fetchUserData")
     fun fetchUserData(@Query("userId") userId: String) : Single<UserDailyAttendanceData>
+
+    @POST("submitDailyReport")
+    fun submitDailyReport(@Query("userId") userId: String,@Body dailyReport: DailyReportRequest): Single<Any>
 }
